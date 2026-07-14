@@ -2,17 +2,17 @@ import os
 import pyaes
 import glob
 
-#Itera em todos os arquivos .txt da pasta
+#Itera em todos os arquivos .txt.ransowaretroll da pasta
 for nome in glob.glob('*.txt.ransowaretroll'):
     with open(f'{nome}', "rb") as f:
         conteudo = f.read()
 
-    #Gera uma chave de criptoggrafia
+    #Usa a chave para descriptografar
     key = b"#]>[rNBIoe0R28h@"
     aes = pyaes.AESModeOfOperationCTR(key)
     descriptografArquivo = aes.decrypt(conteudo)
 
-    #Gera um novo arquivo criptografado com o mesmo nome porém além da extensão .txt é acompanhado da extensão do ransoware
+    #Gera um novo arquivo descriptografado sem a extensão .ransoware
     novoArquivo = nome.split('.ransowaretroll')[0]
     novoArquivo = open(f'{novoArquivo}', 'wb')
     novoArquivo.write(descriptografArquivo)
