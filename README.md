@@ -36,7 +36,7 @@ O script começa iterando todos os arquivos num for na lista de todos os nomes c
 <br>
 <br>
 
-## Funcionamento do Script de Criptografia
+## Funcionamento do Script de Descriptografia
 O script de descriptografia tem o funcionamento semelhante, ele utiliza um for numa lista gerada pela função glob pesquisando por arquivos com a extensão .txt.ransowaretroll, ler o conteúdo de cada arquivo, usa uma chave para gerar uma cifra para descriptografar e depois gera um novo arquivo removendo a extensão .ransoware e com o conteúdo descriptografado e legível
 
 <img width="797" height="561" alt="image" src="https://github.com/user-attachments/assets/299dc4b7-4ae6-42d6-9e09-5bf9bfc85daa" /> <br>
